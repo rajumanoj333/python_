@@ -1,0 +1,11 @@
+#function Example
+def greeting(p):
+    length = 10 + len(p)
+    styled_line = '+' * length
+    print(styled_line)
+    print(f'{p:^{length}}')
+    print(styled_line)
+
+greeting('hi')
+weather = 'Today would be a nice, sunny day'
+greeting(weather)
