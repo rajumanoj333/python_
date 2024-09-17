@@ -1,0 +1,17 @@
+#we can open the file by using open function
+
+file = open("example.txt", "r")
+
+#"r" - Read  | "w" - Write | "a" - Append
+
+# Read entire file
+content = file.read()
+
+# Read line by line by using for loop
+for line in file:
+    print(line)
+
+# Read specific number of characters
+ch = file.read(100)
+# important to close file after write the data
+file.close()
